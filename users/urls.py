@@ -1,5 +1,6 @@
 from django.conf.urls import url
 
+# This is importing the controller
 from . import views
 
 app_name = 'users'
