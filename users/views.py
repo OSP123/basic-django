@@ -8,6 +8,16 @@ from .forms import UserForm
 
 from .models import User
 
+def test(request):
+  response = """
+    <h1>Yo, this works?</h1>
+    <p>Crazy, I know</p>
+  """
+  return HttpResponse(response)
+
+def testTemplate(request):
+  return render(request, 'users/testTemplate.html', { "name": "Mr. Whiskers" })
+  
 class UserListView(ListView):
     model = User
     template_name = 'users/index.html'

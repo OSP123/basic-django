@@ -10,4 +10,8 @@ urlpatterns = [
         views.UserDetailView.as_view(), name='detail'),
 
     url(r'^add/$', views.add, name='add'),
+
+    url(r'^test/$', views.test, name='test'),
+
+    url(r'^testTemplate/$', views.testTemplate, name='testTemplate'),
 ]

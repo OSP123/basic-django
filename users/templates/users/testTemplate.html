@@ -1,0 +1,11 @@
+{% extends 'users/base.html' %} 
+
+{% block title %} testTemplate {% endblock %} 
+{% block content %} 
+  <h1>Hey, I'm some template content</h1>
+   {% if name %}
+  <h1>Hello, {{ name }}!</h1>
+  {% else %}
+  <h1>Hello, Stranger!</h1>
+  {% endif %}
+{% endblock %}
